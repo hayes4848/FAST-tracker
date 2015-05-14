@@ -1,0 +1,31 @@
+<template name="home">
+	<div class="row">
+		<form name="newClient">
+			<div class="col-sm-2">
+				<input name="firstName" type="text" value="" placeholder="first name" />
+			</div>
+			<div class="col-sm-2">
+				<input name="lastName" type="text" value="" placeholder="last name" />
+			</div>
+			<div class="col-sm-2">
+				<input name="age" type="text" value="" placeholder="Age" />
+			</div>
+			<div class="col-sm-2">
+				<input name="gender" type="text" value="" placeholder="Gender" />
+			</div>
+			<div>
+				<input class="col-sm-1 btn btn-primary" type="submit" value=" Add Client" />
+			</div>
+		</form>
+	</div>	
+
+
+	{{#each clients}}
+	<div class="row well well-sm">
+		<div class="col-sm-3"><a href="{{pathFor 'clientPage'}}">{{firstName}} {{lastName}}</a></div>
+		<div class="col-sm-3">{{age}}</div>
+		<div class="col-sm-3">{{gender}}</div>
+		<a class="btn btn-danger delete col-sm-1" href="#">Delete Client</a>
+	</div>	
+	{{/each}}	
+</template>
