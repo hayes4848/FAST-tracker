@@ -1,0 +1,72 @@
+<template name="firstTest">
+{{#if Test1}}
+	<button class="delete btn btn-danger col-xs-offset-10 ">Clear Form</button>
+{{/if}}
+{{#with Test1}}	
+	<form name="func-mov-pre">
+      <div class="row ">
+        <div class="col-xs-2 text-right"><label>Deep Squat</label></div>
+    	<div class="col-xs-3"><input name="deepL" type="text" value="{{deepL}}" placeholder="Deep Squat L" /></div>
+    	<div class="col-xs-3"><input name="deepR" type="text" value="{{deepR}}" placeholder="Deep Squat R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>Hurdle Step</label></div>
+    	<div class="col-xs-3"><input name="hurdleL" type="" value="{{hurdleL}}" placeholder="Hurdle Step L" /></div>
+    	<div class="col-xs-3"><input name="hurdleR" type="" value="{{hurdleR}}" placeholder="Hurdle Step R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>In-Line Lunge</label></div>
+    	<div class="col-xs-3"><input name="lungeL" type="" value="{{lungeL}}" placeholder="Lunge L" /></div>
+    	<div class="col-xs-3"><input name="lungeR" type="" value="{{lungeR}}" placeholder="Lunge R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>Shoulder Mobility</label></div>
+    	<div class="col-xs-3"><input name="shoulderL" type="" value="{{shoulderL}}" placeholder="Shoulder Mobility L" /></div>
+    	<div class="col-xs-3"><input name="shoulderR" type="" value="{{shoulderR}}" placeholder="Shoulder Mobility R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>Active Straight Leg Raise</label></div>
+    	<div class="col-xs-3"><input name="raiseL" type="" value="{{raiseL}}" placeholder="Leg Raise L" /></div>
+    	<div class="col-xs-3"><input name="raiseR" type="" value="{{raiseR}}" placeholder="Leg Raise R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>Trunk Stability Push-up</label></div>
+    	<div class="col-xs-3"><input name="pushL" type="" value="{{pushL}}" placeholder="Push-up L" /></div>
+    	<div class="col-xs-3"><input name="pushR" type="" value="{{pushR}}" placeholder="Push-up R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>Rotational Stability</label></div>
+    	<div class="col-xs-3"><input name="stabilityL" type="" value="{{stabilityL}}" placeholder="Stability L" /></div>
+    	<div class="col-xs-3"><input name="stabilityR" type="" value="{{stabilityR}}" placeholder="Stability R" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>20 Yard Shuttle</label></div>
+    	<div class="col-xs-3"><input name="shuttle1" type="" value="{{shuttle1}}" placeholder="Time 1" /></div>
+    	<div class="col-xs-3"><input name="shuttle2" type="" value="{{shuttle2}}" placeholder="Time 2" /></div>
+    	<div class="col-xs-3"><input name="shuttle3" type="" value="{{shuttle3}}" placeholder="Time 3" /></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2 text-right"><label>40 Yard Dash</label></div>
+    	<div class="col-xs-3"><input name="dash1" type="" value="{{dash1}}" placeholder="Time 1" /></div>
+    	<div class="col-xs-3"><input name="dash2" type="" value="{{dash2}}" placeholder="Time 2" /></div>
+    	<div class="col-xs-3"><input name="dash3" type="" value="{{dash3}}" placeholder="Time 3" /></div>
+      </div>
+       <div class="row">
+        <div class="col-xs-2 text-right"><label>Vertical Jump</label></div>
+    	<div class="col-xs-3"><input name="jump1" type="" value="{{jump1}}" placeholder="Try 1" /></div>
+    	<div class="col-xs-3"><input name="jump2" type="" value="{{jump2}}" placeholder="Try 2" /></div>
+    	<div class="col-xs-3"><input name="jump3" type="" value="{{jump3}}" placeholder="Try 3" /></div>
+      </div>
+       <div class="row">
+        <div class="col-xs-2 text-right"><label>Thomas Test</label></div>
+    	<div class="col-xs-3"><input name="thomas1" type="" value="{{thomas1}}" placeholder="Try 1" /></div>
+    	<div class="col-xs-3"><input name="thomas2" type="" value="{{thomas2}}" placeholder="Try 2" /></div>
+    	<div class="col-xs-3"><input name="thomas3" type="" value="{{thomas3}}" placeholder="Try 3" /></div>
+      </div>
+      <div class="row"><br/></div>	
+      <div class="row">
+      	<input class="col-xs-offset-4 btn btn-success" type="submit" value="Save Record" />
+      </div>
+    </form>
+  {{/with}}  
+</template>

@@ -11,7 +11,10 @@ Template.home.events({
 
 		client._id = Clients.insert(client);
 
-		event.target.client.value = "";
+		// event.target.firstName.value = "";
+
+		// Meteor.call('newClient', {newClient: client});
+		
 	},
 
 	'click .delete': function(event) {
@@ -23,6 +26,14 @@ Template.home.events({
     }
   }
 })
+
+
+Meteor.methods({
+  newClient: function (client) {
+    Clients.insert(client);
+  }
+})
+
 
 
 Template.home.helpers({
